@@ -1,0 +1,225 @@
+.header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+
+header.header .inner-header {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.gnb-area {
+  width: 100%;
+}
+
+.inner-header .util {
+  margin-top: 15px;
+  float: right;
+}
+
+.inner-header .util .util-link > li {
+  float: left;
+  margin-right: 3px;
+  position: relative;
+}
+
+.inner-header .util .util-link > li > a:before {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #000;
+}
+
+.inner-header .util .util-link > li > a {
+  display: block;
+  font-size: 14px;
+  color: #444;
+  padding: 12px 8px 15px 8px;
+  margin-right: 3px;
+  position: relative;
+}
+
+.inner-header .util .util-link > li.museumLink {
+  margin-right: 16px;
+}
+
+.inner-header .util .util-link > li.sns-btn > ul > li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.inner-header .util .util-link > li.sns-btn {
+  position: relative;
+  margin-left: 17px;
+  padding: 12px 15px 0 15px;
+}
+
+.inner-header .util .util-link > li.sns-btn:before {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #000;
+}
+
+.inner-header .util .util-link > li:last-child {
+  margin-right: 0;
+}
+
+.gnb {
+  clear: both;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 120px;
+  position: relative;
+  background: #fff;
+  z-index: 100;
+  float: left;
+  padding-left: 250px;
+  padding-right: 170px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.gnb .logo {
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+
+.gnb .logo img {
+  width: 90%;
+}
+
+.gnb .depth1 {
+  width: 120px;
+  float: left;
+  text-align: center;
+}
+
+.gnb .depth1 > a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.gnb .depth1:hover > a {
+  color: #3f0b9f;
+}
+
+.gnb .depth1:hover > .depth2 {
+  display: block;
+}
+
+.gnb .depth2 > li:hover > .depth3 {
+  display: block;
+}
+
+.gnb .depth2 {
+  position: absolute;
+  left: 0;
+  width: 1400px;
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+.gnb .depth2 > li {
+  position: relative;
+  display: inline-block;
+}
+
+.gnb .depth2 > li > a {
+  display: block;
+  margin: 10px 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.gnb .depth2 > li > a:hover {
+  color: rgb(255, 213, 0);
+}
+
+.gnb .depth3 > li > a:hover {
+  color: rgb(255, 213, 0);
+  text-decoration: underline;
+}
+.gnb .depth2 > li > a:before {
+  content: '';
+  position: absolute;
+  /*부모 요소에는 position: relative를 주어야 한다.*/
+  background-color: rgb(255, 213, 0);
+  height: 5px;
+  /*밑줄 굵기*/
+  width: 0;
+  /*초기에 보이지 않도록*/
+  bottom: 0;
+  /*a태그 아래에 위치시키기*/
+  /*애니메이션 동작 실행 시간 정의*/
+  /*가상 요소를 가운데로 이동시키기*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*태그가 호버링 되면 가상 요소의 크기를 100%로 키우기*/
+.gnb .depth2 > li > a:hover:before {
+  width: 20px;
+}
+
+.depth3 {
+  display: none;
+  position: absolute;
+  left: 50%;
+  min-width: 100%;
+  padding: 20px;
+  z-index: 1;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  background: #333;
+  line-height: 20px;
+}
+
+.depth3 > li {
+  margin-bottom: 10px;
+}
+
+.depth3 > li > a {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'notokr-DemiLight';
+  white-space: nowrap;
+  transition: 0.2s;
+  position: relative;
+}
+
+.r-link-list {
+  top: 48px;
+  right: 5px;
+  padding-top: 100px;
+}
+
+.r-link-list > ul li {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.r-link-list > ul li > a {
+  color: #444444;
+  font-size: 15px;
+  font-family: 'notokr-medium';
+}
